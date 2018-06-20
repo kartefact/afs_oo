@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TTYP" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD40V>
+    <TYPENAME>ZAFS_OO_CARRID_RANGE</TYPENAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <ROWTYPE>ZAFS_OO_CARRID_RANGE_ROW</ROWTYPE>
+    <ROWKIND>S</ROWKIND>
+    <DATATYPE>STRU</DATATYPE>
+    <ACCESSMODE>T</ACCESSMODE>
+    <KEYDEF>D</KEYDEF>
+    <KEYKIND>N</KEYKIND>
+    <DDTEXT>ABAP Freak Show - OO Tutorial - Carrier ID Range</DDTEXT>
+    <TTYPKIND>R</TTYPKIND>
+    <RANGE_CTYP>S_CARR_ID</RANGE_CTYP>
+    <CTDATATYPE>CHAR</CTDATATYPE>
+    <CTLENG>000003</CTLENG>
+   </DD40V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

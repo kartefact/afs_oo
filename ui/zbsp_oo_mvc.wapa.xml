@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_WAPA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <ATTRIBUTES>
+    <APPLNAME>ZBSP_OO_MVC</APPLNAME>
+    <APPLEXT>zbsp_oo_mvc</APPLEXT>
+    <STARTPAGE>default.do</STARTPAGE>
+    <STATEFUL>X</STATEFUL>
+    <ORIGLANG>E</ORIGLANG>
+    <MODIFLANG>E</MODIFLANG>
+    <TEXT>AFS - Object Oriented Examples - Model View Controller</TEXT>
+   </ATTRIBUTES>
+   <PAGES>
+    <item>
+     <ATTRIBUTES>
+      <APPLNAME>ZBSP_OO_MVC</APPLNAME>
+      <PAGEKEY>DEFAULT.BSP</PAGEKEY>
+      <PAGENAME>default.bsp</PAGENAME>
+      <PAGETYPE>V</PAGETYPE>
+      <CONTROLLERURL>ZCL_BSP_CTRL_OO_MVC_DEFAULT</CONTROLLERURL>
+      <MIMETYPE>text/html</MIMETYPE>
+      <STRIPMODE>2</STRIPMODE>
+      <LAYOUTLANGU>E</LAYOUTLANGU>
+      <DELTA_HANDLING>X</DELTA_HANDLING>
+      <VERSION>A</VERSION>
+      <LANGU>E</LANGU>
+      <DESCRIPT>AFS - OO MVC Example</DESCRIPT>
+     </ATTRIBUTES>
+     <PARAMETERS>
+      <O2PAGPARS>
+       <APPLNAME>ZBSP_OO_MVC</APPLNAME>
+       <PAGEKEY>DEFAULT.BSP</PAGEKEY>
+       <COMPNAME>MODEL</COMPNAME>
+       <VERSION>A</VERSION>
+       <PARDECLTYP>1</PARDECLTYP>
+       <TYPTYPE>3</TYPTYPE>
+       <TYPE>ZCL_BSP_MODEL_OO_MVC</TYPE>
+       <ALIASNAME>model</ALIASNAME>
+      </O2PAGPARS>
+     </PARAMETERS>
+    </item>
+    <item>
+     <ATTRIBUTES>
+      <APPLNAME>ZBSP_OO_MVC</APPLNAME>
+      <PAGEKEY>DEFAULT.DO</PAGEKEY>
+      <PAGENAME>default.do</PAGENAME>
+      <IMPLCLASS>ZCL_BSP_CTRL_OO_MVC_DEFAULT</IMPLCLASS>
+      <PAGETYPE>C</PAGETYPE>
+      <COMPRESSION>X</COMPRESSION>
+      <LAYOUTLANGU>E</LAYOUTLANGU>
+      <DELTA_HANDLING>X</DELTA_HANDLING>
+      <VERSION>A</VERSION>
+      <LANGU>E</LANGU>
+      <DESCRIPT>Default Controller</DESCRIPT>
+     </ATTRIBUTES>
+    </item>
+   </PAGES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

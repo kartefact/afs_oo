@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_WAPA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <ATTRIBUTES>
+    <APPLNAME>ZBSP_OO_BASIC</APPLNAME>
+    <APPLEXT>zbsp_oo_basic</APPLEXT>
+    <STARTPAGE>default.bsp</STARTPAGE>
+    <STATEFUL>X</STATEFUL>
+    <ORIGLANG>E</ORIGLANG>
+    <MODIFLANG>E</MODIFLANG>
+    <TEXT>AFS - Object Oriented Example Basic</TEXT>
+   </ATTRIBUTES>
+   <PAGES>
+    <item>
+     <ATTRIBUTES>
+      <APPLNAME>ZBSP_OO_BASIC</APPLNAME>
+      <PAGEKEY>DEFAULT.BSP</PAGEKEY>
+      <PAGENAME>default.bsp</PAGENAME>
+      <MIMETYPE>text/html</MIMETYPE>
+      <STRIPMODE>2</STRIPMODE>
+      <COMPRESSION>X</COMPRESSION>
+      <LAYOUTLANGU>E</LAYOUTLANGU>
+      <DELTA_HANDLING>X</DELTA_HANDLING>
+      <VERSION>A</VERSION>
+      <LANGU>E</LANGU>
+      <DESCRIPT>AFS - OO Basic Example</DESCRIPT>
+     </ATTRIBUTES>
+     <EVENT_HANDLERS>
+      <O2PAGEVHS>
+       <APPLNAME>ZBSP_OO_BASIC</APPLNAME>
+       <PAGEKEY>DEFAULT.BSP</PAGEKEY>
+       <EVHANDLER>ONINPUTPROCESSING</EVHANDLER>
+       <VERSION>A</VERSION>
+       <EVHNAME>OnInputProcessing</EVHNAME>
+       <SOURCE>
+        <item>* event handler for checking and processing user input and</item>
+        <item>* for defining navigation</item>
+        <item/>
+        <item> IF event_id CS &apos;htmlb&apos;.</item>
+        <item>   DATA: htmlb_event_ex TYPE REF TO if_htmlb_data.</item>
+        <item>   DATA: button_event TYPE REF TO cl_htmlb_event_button.</item>
+        <item>   htmlb_event_ex ?= cl_htmlb_manager=&gt;get_event_ex( request ).</item>
+        <item>   CHECK htmlb_event_ex IS NOT INITIAL.</item>
+        <item>   IF htmlb_event_ex-&gt;event_server_name = &apos;onSubmit&apos;.</item>
+        <item>     button_event ?= htmlb_event_ex.</item>
+        <item>     SELECT * FROM sflight INTO CORRESPONDING FIELDS OF TABLE me-&gt;isflight</item>
+        <item>       WHERE carrid = me-&gt;pcarrid.</item>
+        <item>   ENDIF.</item>
+        <item> ENDIF.</item>
+       </SOURCE>
+      </O2PAGEVHS>
+     </EVENT_HANDLERS>
+     <PARAMETERS>
+      <O2PAGPARS>
+       <APPLNAME>ZBSP_OO_BASIC</APPLNAME>
+       <PAGEKEY>DEFAULT.BSP</PAGEKEY>
+       <COMPNAME>ISFLIGHT</COMPNAME>
+       <VERSION>A</VERSION>
+       <PARDECLTYP>1</PARDECLTYP>
+       <TYPTYPE>1</TYPTYPE>
+       <TYPE>TT_SFLIGHT</TYPE>
+       <ALIASNAME>isflight</ALIASNAME>
+      </O2PAGPARS>
+      <O2PAGPARS>
+       <APPLNAME>ZBSP_OO_BASIC</APPLNAME>
+       <PAGEKEY>DEFAULT.BSP</PAGEKEY>
+       <COMPNAME>PCARRID</COMPNAME>
+       <VERSION>A</VERSION>
+       <TYPTYPE>1</TYPTYPE>
+       <TYPE>S_CARR_ID</TYPE>
+       <ALIASNAME>pcarrid</ALIASNAME>
+       <TEXT>Airline Code</TEXT>
+      </O2PAGPARS>
+     </PARAMETERS>
+     <TYPES>
+      <item>TYPES: BEGIN OF t_sflight,</item>
+      <item>         carrid     type sflight-carrid, &quot;Airline Code</item>
+      <item>         connid     type sflight-connid, &quot;Flight Connection Number</item>
+      <item>         fldate     type sflight-fldate, &quot;Flight date</item>
+      <item>         price      type sflight-price, &quot;Airfare</item>
+      <item>         currency   type sflight-currency, &quot;Local currency of airline</item>
+      <item>         planetype  type sflight-planetype, &quot;Aircraft Type</item>
+      <item>         seatsmax   type sflight-seatsmax, &quot;Maximum capacity in economy class</item>
+      <item>         seatsocc   type sflight-seatsocc, &quot;Occupied seats in economy class</item>
+      <item>         paymentsum type sflight-paymentsum, &quot;Total of current bookings</item>
+      <item>       END   OF t_sflight.</item>
+      <item>types: tt_sflight type STANDARD TABLE OF t_sflight.</item>
+     </TYPES>
+    </item>
+   </PAGES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

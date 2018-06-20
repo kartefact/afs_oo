@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+    <VERSION>1</VERSION>
+    <LANGU>E</LANGU>
+    <DESCRIPT>AFS - Controller Class for Classic Dynpro</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <CLSFINAL>X</CLSFINAL>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>CREATE_CONTROLS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Enjoy Control Instances</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>CUSTOM_CONTAINER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Container for Custom Controls in the Screen Area</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>DISPLAY_INFLIGHT_MOVIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Request to display in-flight movies</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>FREE_CONTROLS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Free all used Enjoy Control Instances</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>GR_COLUMN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Column Description of Simple, Two-Dimensional Tables</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>GR_COLUMNS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Columns in Simple, Two-Dimensional Tables</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>GR_DSPSET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Appearance of the ALV Output</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>GR_EVENTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Events in Simple, Two-Dimensional Tables</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>GR_FUNCTIONS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Generic and Application-Specific Functions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>GR_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Settings for Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>GR_SELECTIONS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Selections in List-Type Output Tables</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>GR_TABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Basis Class for Simple Tables</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>INITIALIZE_ALV</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initialize the ALV Object Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>ON_ALV_DOUBLE_CLICK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler for ALV Double Click</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>PAI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Process After Input Event Dispatch</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>PBO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Process Before Output Event Dispatch</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DYNP_CTRL_AFS_OO</CLSNAME>
+     <CMPNAME>SHOW_FLIGHT_POPUP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Show In-Flight Movie Popup</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
